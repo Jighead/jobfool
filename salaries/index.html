@@ -1,0 +1,155 @@
+<!--- TODO: Build out this page   / front end. Back end is complete 
+            A bootstrap progress bar graph seems like a good idea.
+--->
+<cfparam name="url.qry" default="ux developer">
+<cfparam name="url.loc" default="chicago">
+<cfinvoke component="#request.componentpath#.salarysearch" method="getSalary" argumentcollection="#url#" returnvariable="results">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> 
+<html lang="en"> 
+    <!--<![endif]-->
+    <head>
+        <title>Employment Salaries</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Abril Fatface|Oswald:700,400,300|Montserrat:400,700|Open+Sans:400,600,700,800,300italic,400italic,600italic,700italic,800italic|Rokkitt:400,700|Cantarell:400,700|<link Roboto+Slab:400,700,300|Open+Sans:400,800italic,800,700italic,600|Alfa+Slab+One|Play|Bevan"> -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+        <link rel="stylesheet" href="../assets/css/plugins.css">
+        <link rel="stylesheet" href="../assets/plugins/line-icons/line-icons.css">
+        <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/app.css">
+        <style>
+        .header-box-span {
+            background: #eee;
+            border: 1px solid #ddd;
+            display: table;
+            height: 150px;
+            margin: 0;
+            width: 100%;
+        }
+        .header-box-span h1 {
+            color: #333;
+            display: table-cell;
+            font-size: 40px;
+            font-weight: 600;
+            padding: 0 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .displayed-average-salary {
+            color: #36567d;
+            font-size: 83px;
+            font-weight: 700;
+            margin-bottom: -10px;
+        }
+        .salary-text {
+            font-size:1.2em;
+        }
+        .salary-text a {
+            font-weight:700;
+        }
+.x-PT20 {
+    margin-bottom:2em;
+}
+        </style>
+    </head>
+	<body class="x-salaries header-fixed">
+
+        <header></header>
+
+        <section class="x-searchbar-jobs x-contentpattern">
+            <div class="container"> 
+                <div class="row" data-pg-name="Row-Searchbar"> 
+                    <form method="get" action=""> 
+                        <div class="col-sm-5 x-reducepad-5"> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon"><i class="fa fa-lg fa-tag x-blue"></i></span> 
+                                <input type="text" name="qry" value="Front End Developer" id="x-what" placeholder="what" class="form-control x-what"> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-sm-5 x-reducepad-5"> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon"><i class="fa fa-lg fa-map-marker x-red"></i></span> 
+                                <input type="text" name="loc" value="Orland, FL"id="x-where" placeholder="where" class="form-control x-where"> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-sm-2 x-reducepad-5"> 
+                            <button id="x_search-form" class="form-control inline-block btn-primary x-search-btn">Show Salaries</button>
+                        </div>                         
+                    </form>                     
+                </div>                 
+            </div> <!-- //container -->   
+        </section>
+        <section id="content-section"> 
+            <div class="container x-result-bar"> 
+                <div class="row" data-pg-name="Row-Result"> 
+                    <div class="col-xs-12 text-left x-results"> 
+                        <div class="header-box-span"><h1>Front End Developer Salaries in Orlando, FL</h1></div>
+                        <div class="row graph-row">
+                            <div class="col-md-3 summary-column"><div class="average-container">
+                                <div class="displayed-average-salary">$80K</div>
+                            </div>
+                        <div class="salary-text">
+                            <p>The average salary for <a href="/search?q=front+end+developer&amp;l=orlando%2C+fl">Front End Developer jobs near Orlando, FL</a> is $80,139*.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                            <div class="main-graph" data-points="57890,67532,80139,95099,110938" style="height: 425px"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 825px; height: 425px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="825" height="425" aria-label="A chart." style="overflow: hidden;"><defs id="defs"><clipPath id="_ABSTRACT_RENDERER_ID_0"><rect x="80" y="10" width="745" height="375"></rect></clipPath></defs><rect x="0" y="0" width="825" height="425" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="80" y="10" width="745" height="375" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.thejobfool.com/salaries/?qry=ui+developer&amp;l=orlando+fl)"><g><rect x="80" y="384" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="342" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="301" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="259" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="218" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="176" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="135" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="93" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="52" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="10" width="745" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><g><path d="M65.62,550.7222222222222L65.62,350.2249777777778L154.9,310.15711111111113L266.5,270.08924444444443L452.5,217.70015555555557L638.5,155.53304444444444L750.1,89.71319999999997L839.38,23.89335555555556L839.38,550.7222222222222Z" stroke="none" stroke-width="0" fill-opacity="0.55" fill="#0066cc" style="fill: rgb(208, 227, 242); fill-opacity: 0.6;"></path></g><g></g></g><g><rect x="80" y="10" width="1" height="375" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><path d="M65.62,350.2249777777778L154.9,310.15711111111113L266.5,270.08924444444443L452.5,217.70015555555557L638.5,155.53304444444444L750.1,89.71319999999997L839.38,23.89335555555556" stroke="#0066cc" stroke-width="2" stroke-dasharray="0,10" fill-opacity="1" fill="none"></path><g></g></g><g><rect x="154.9" y="298.15711111111113" width="1" height="12" stroke="none" stroke-width="0" fill="#999999"></rect><rect x="266.5" y="258.08924444444443" width="1" height="12" stroke="none" stroke-width="0" fill="#999999"></rect><rect x="638.5" y="143.53304444444444" width="1" height="12" stroke="none" stroke-width="0" fill="#999999"></rect><rect x="750.1" y="77.71319999999997" width="1" height="12" stroke="none" stroke-width="0" fill="#999999"></rect><rect x="452.5" y="205.70015555555557" width="1" height="12" stroke="none" stroke-width="0" fill="#999999"></rect></g></g><g><circle cx="154.9" cy="310.15711111111113" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle><circle cx="266.5" cy="270.08924444444443" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle><circle cx="452.5" cy="217.70015555555557" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle><circle cx="638.5" cy="155.53304444444444" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle><circle cx="750.1" cy="89.71319999999997" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle><circle cx="452.5" cy="217.70015555555557" r="7" stroke="none" stroke-width="0" fill="#0066cc"></circle></g><g><g><text text-anchor="middle" x="154.9" y="402.2" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#444444">Bottom 10%</text></g><g><text text-anchor="middle" x="266.5" y="402.2" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#444444">Bottom 25%</text></g><g><text text-anchor="middle" x="452.5" y="402.2" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#444444">Average</text></g><g><text text-anchor="middle" x="638.5" y="402.2" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#444444">Top 25%</text></g><g><text text-anchor="middle" x="750.1" y="402.2" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#444444">Top 10%</text></g><g><text text-anchor="end" x="68" y="388.7" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$40K</text></g><g><text text-anchor="end" x="68" y="347.14444444444445" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$50K</text></g><g><text text-anchor="end" x="68" y="305.5888888888889" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$60K</text></g><g><text text-anchor="end" x="68" y="264.0333333333333" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$70K</text></g><g><text text-anchor="end" x="68" y="222.47777777777776" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$80K</text></g><g><text text-anchor="end" x="68" y="180.92222222222222" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$90K</text></g><g><text text-anchor="end" x="68" y="139.36666666666665" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$100K</text></g><g><text text-anchor="end" x="68" y="97.81111111111109" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$110K</text></g><g><text text-anchor="end" x="68" y="56.255555555555546" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$120K</text></g><g><text text-anchor="end" x="68" y="14.7" font-family="Helvetica,Arial,sans-serif" font-size="12" stroke="none" stroke-width="0" fill="#888888">$130K</text></g></g><g><g><g><rect x="127.5" y="283.5" width="56" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="middle" x="154.9" y="296.0571111111111" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="#ffffff" stroke-width="3" fill="#0066cc" aria-hidden="true">$57,890</text><text text-anchor="middle" x="154.9" y="296.0571111111111" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="none" stroke-width="0" fill="#0066cc">$57,890</text></g><rect x="129.4" y="284.15711111111113" width="51" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g></g><g><g><rect x="238.5" y="243.5" width="57" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="middle" x="266.5" y="255.98924444444444" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="#ffffff" stroke-width="3" fill="#0066cc" aria-hidden="true">$67,532</text><text text-anchor="middle" x="266.5" y="255.98924444444444" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="none" stroke-width="0" fill="#0066cc">$67,532</text></g><rect x="241" y="244.08924444444443" width="51" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g></g><g><g><rect x="610.5" y="128.5" width="57" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="middle" x="638.5" y="141.43304444444445" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="#ffffff" stroke-width="3" fill="#0066cc" aria-hidden="true">$95,099</text><text text-anchor="middle" x="638.5" y="141.43304444444445" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="none" stroke-width="0" fill="#0066cc">$95,099</text></g><rect x="613" y="129.53304444444444" width="51" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g></g><g><g><rect x="719.5" y="62.5" width="62" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="middle" x="750.1" y="75.61319999999998" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="#ffffff" stroke-width="3" fill="#0066cc" aria-hidden="true">$110,938</text><text text-anchor="middle" x="750.1" y="75.61319999999998" font-family="Helvetica,Arial,sans-serif" font-size="14" stroke="none" stroke-width="0" fill="#0066cc">$110,938</text></g><rect x="721.6" y="63.71319999999997" width="57" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g></g><g><g><rect x="406.5" y="180.5" width="93" height="26" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="middle" x="452.5" y="202.10015555555557" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" stroke="#ffffff" stroke-width="3" fill="#0066cc" aria-hidden="true">$80,139</text><text text-anchor="middle" x="452.5" y="202.10015555555557" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" stroke="none" stroke-width="0" fill="#0066cc">$80,139</text></g><rect x="409" y="181.70015555555557" width="87" height="24" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Percentile</th><th>Salary</th><th>Salary</th></tr></thead><tbody><tr><td>-2</td><td>48,248</td><td></td></tr><tr><td>10</td><td>57,890</td><td></td></tr><tr><td>25</td><td>67,532</td><td></td></tr><tr><td>50</td><td>80,139</td><td>80,139</td></tr><tr><td>75</td><td>95,099</td><td></td></tr><tr><td>90</td><td>110,938</td><td></td></tr><tr><td>102</td><td>126,777</td><td></td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 435px; left: 835px; white-space: nowrap; font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold;">$80,139</div><div></div></div></div></div></div>                     
+                    </div>                     
+                </div>                 
+            </div>
+            <!-- //container -->             
+        </section>
+        <section id="content-section" class="x-salary-results x-PT20"> 
+            <div class="container"> 
+                <div class="row" data-pg-name="salary-results"> 
+                    <div class="col-xs-6 text-left">
+                            <h2>Top 5 Related Jobs and Salaries</h2>
+                            <ol>
+                                <li><a href="#">UI Developer</a></li>
+                                <li><a href="#">Web Developer</a></li>
+                                <li><a href="#">Senior Software Engineer</a></li>
+                                <li><a href="#">User Experience Designer</a></li>
+                                <li><a href="#">User Experience Architect</a></li>
+                            </ol>
+                            
+                            
+                    </div>                     
+                </div>                 
+            </div>
+            <!-- //container -->             
+        </section>
+        <footer></footer>>
+
+<script src="../assets/js/jqall.js"></script>
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/app.js"></script> 
+        <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();
+
+
+        });
+            
+        $('#x_search-form').submit(function(e){
+          e.preventDefault();
+        });   
+             
+        </script>
+        <!--[if lt IE 9]>
+	<script src="../assets/plugins/respond.js"></script>
+	<script src="../assets/plugins/html5shiv.js"></script>
+	<script src="../assets/plugins/placeholder-IE-fixes.js"></script>
+    <![endif]-->
+    <script>
+            $("header").load("../partials/header.html")
+            $("footer").load("../partials/footer.html")
+        </script>   
+	</body>
+
+</html>

@@ -1,0 +1,1437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://thejobfool/sandbox/masterpage/index.cfm/kw/developer/ -->
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<STYLE>TABLE.cfdump_wddx {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_xml {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_struct {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_varundefined {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_array {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_query {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_cfc {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_object {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_binary {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udf {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udfbody {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udfarguments {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_wddx TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_xml TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_struct TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_varundefined TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_array TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_query TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_cfc TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_object TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_binary TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udf TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udfbody TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udfarguments TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_wddx TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_xml TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_struct TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_varundefined TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_array TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_query TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_cfc TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_object TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_binary TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udf TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udfbody TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udfarguments TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_wddx {
+	BACKGROUND-COLOR: #000000
+}
+TABLE.cfdump_wddx TH.wddx {
+	BACKGROUND-COLOR: #444444
+}
+TABLE.cfdump_xml {
+	BACKGROUND-COLOR: #888888
+}
+TABLE.cfdump_xml TH.xml {
+	BACKGROUND-COLOR: #aaaaaa
+}
+TABLE.cfdump_xml TD.xml {
+	BACKGROUND-COLOR: #dddddd
+}
+TABLE.cfdump_struct {
+	BACKGROUND-COLOR: #0000cc
+}
+TABLE.cfdump_struct TH.struct {
+	BACKGROUND-COLOR: #4444cc
+}
+TABLE.cfdump_struct TD.struct {
+	BACKGROUND-COLOR: #ccddff
+}
+TABLE.cfdump_varundefined {
+	BACKGROUND-COLOR: #cc3300
+}
+TABLE.cfdump_varundefined TH.varundefined {
+	BACKGROUND-COLOR: #cc3300
+}
+TABLE.cfdump_varundefined TD.varundefined {
+	BACKGROUND-COLOR: #ccddff
+}
+TABLE.cfdump_array {
+	BACKGROUND-COLOR: #006600
+}
+TABLE.cfdump_array TH.array {
+	BACKGROUND-COLOR: #009900
+}
+TABLE.cfdump_array TD.array {
+	BACKGROUND-COLOR: #ccffcc
+}
+TABLE.cfdump_query {
+	BACKGROUND-COLOR: #884488
+}
+TABLE.cfdump_query TH.query {
+	BACKGROUND-COLOR: #aa66aa
+}
+TABLE.cfdump_query TD.query {
+	BACKGROUND-COLOR: #ffddff
+}
+TABLE.cfdump_cfc {
+	BACKGROUND-COLOR: #ff0000
+}
+TABLE.cfdump_cfc TH.cfc {
+	BACKGROUND-COLOR: #ff4444
+}
+TABLE.cfdump_cfc TD.cfc {
+	BACKGROUND-COLOR: #ffcccc
+}
+TABLE.cfdump_object {
+	BACKGROUND-COLOR: #ff0000
+}
+TABLE.cfdump_object TH.object {
+	BACKGROUND-COLOR: #ff4444
+}
+TABLE.cfdump_binary {
+	BACKGROUND-COLOR: #eebb00
+}
+TABLE.cfdump_binary TH.binary {
+	BACKGROUND-COLOR: #ffcc44
+}
+TABLE.cfdump_binary TD {
+	FONT-SIZE: x-small
+}
+TABLE.cfdump_udf {
+	BACKGROUND-COLOR: #aa4400
+}
+TABLE.cfdump_udf TH.udf {
+	BACKGROUND-COLOR: #cc6600
+}
+TABLE.cfdump_udfarguments {
+	BACKGROUND-COLOR: #dddddd; cell-spacing: 3
+}
+TABLE.cfdump_udfarguments TH {
+	BACKGROUND-COLOR: #eeeeee; COLOR: #000000
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+
+
+// for queries we have more than one td element to collapse/expand
+	var expand = "open";
+
+	dump = function( obj ) {
+		var out = "" ;
+		if ( typeof obj == "object" ) {
+			for ( key in obj ) {
+				if ( typeof obj[key] != "function" ) out += key + ': ' + obj[key] + '<br>' ;
+			}
+		}
+	}
+
+
+	cfdump_toggleRow = function(source) {
+		//target is the right cell
+		if(document.all) target = source.parentElement.cells[1];
+		else {
+			var element = null;
+			var vLen = source.parentNode.childNodes.length;
+			for(var i=vLen-1;i>0;i--){
+				if(source.parentNode.childNodes[i].nodeType == 1){
+					element = source.parentNode.childNodes[i];
+					break;
+				}
+			}
+			if(element == null)
+				target = source.parentNode.lastChild;
+			else
+				target = element;
+		}
+		//target = source.parentNode.lastChild ;
+		cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+	}
+
+	cfdump_toggleXmlDoc = function(source) {
+
+		var caption = source.innerHTML.split( ' [' ) ;
+
+		// toggle source (header)
+		if ( source.style.fontStyle == 'italic' ) {
+			// closed -> short
+			source.style.fontStyle = 'normal' ;
+			source.innerHTML = caption[0] + ' [short version]' ;
+			source.title = 'click to maximize' ;
+			switchLongToState = 'closed' ;
+			switchShortToState = 'open' ;
+		} else if ( source.innerHTML.indexOf('[short version]') != -1 ) {
+			// short -> full
+			source.innerHTML = caption[0] + ' [long version]' ;
+			source.title = 'click to collapse' ;
+			switchLongToState = 'open' ;
+			switchShortToState = 'closed' ;
+		} else {
+			// full -> closed
+			source.style.fontStyle = 'italic' ;
+			source.title = 'click to expand' ;
+			source.innerHTML = caption[0] ;
+			switchLongToState = 'closed' ;
+			switchShortToState = 'closed' ;
+		}
+
+		// Toggle the target (everething below the header row).
+		// First two rows are XMLComment and XMLRoot - they are part
+		// of the long dump, the rest are direct children - part of the
+		// short dump
+		if(document.all) {
+			var table = source.parentElement.parentElement ;
+			for ( var i = 1; i < table.rows.length; i++ ) {
+				target = table.rows[i] ;
+				if ( i < 3 ) cfdump_toggleTarget( target, switchLongToState ) ;
+				else cfdump_toggleTarget( target, switchShortToState ) ;
+			}
+		}
+		else {
+			var table = source.parentNode.parentNode ;
+			var row = 1;
+			for ( var i = 1; i < table.childNodes.length; i++ ) {
+				target = table.childNodes[i] ;
+				if( target.style ) {
+					if ( row < 3 ) {
+						cfdump_toggleTarget( target, switchLongToState ) ;
+					} else {
+						cfdump_toggleTarget( target, switchShortToState ) ;
+					}
+					row++;
+				}
+			}
+		}
+	}
+
+	cfdump_toggleTable = function(source) {
+
+		var switchToState = cfdump_toggleSource( source ) ;
+		if(document.all) {
+			var table = source.parentElement.parentElement ;
+			for ( var i = 1; i < table.rows.length; i++ ) {
+				target = table.rows[i] ;
+				cfdump_toggleTarget( target, switchToState ) ;
+			}
+		}
+		else {
+			var table = source.parentNode.parentNode ;
+			for ( var i = 1; i < table.childNodes.length; i++ ) {
+				target = table.childNodes[i] ;
+				if(target.style) {
+					cfdump_toggleTarget( target, switchToState ) ;
+				}
+			}
+		}
+	}
+
+	cfdump_toggleSource = function( source ) {
+		if ( source.style.fontStyle == 'italic' || source.style.fontStyle == null) {
+			source.style.fontStyle = 'normal' ;
+			source.title = 'click to collapse' ;
+			return 'open' ;
+		} else {
+			source.style.fontStyle = 'italic' ;
+			source.title = 'click to expand' ;
+			return 'closed' ;
+		}
+	}
+
+	cfdump_toggleTarget = function( target, switchToState ) {
+		if ( switchToState == 'open' )	target.style.display = '' ;
+		else target.style.display = 'none' ;
+	}
+
+	// collapse all td elements for queries
+	cfdump_toggleRow_qry = function(source) {
+		expand = (source.title == "click to collapse") ? "closed" : "open";
+		if(document.all) {
+			var nbrChildren = source.parentElement.cells.length;
+			if(nbrChildren > 1){
+				for(i=nbrChildren-1;i>0;i--){
+					target = source.parentElement.cells[i];
+					cfdump_toggleTarget( target,expand ) ;
+					cfdump_toggleSource_qry(source);
+				}
+			}
+			else {
+				//target is the right cell
+				target = source.parentElement.cells[1];
+				cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+			}
+		}
+		else{
+			var target = null;
+			var vLen = source.parentNode.childNodes.length;
+			for(var i=vLen-1;i>1;i--){
+				if(source.parentNode.childNodes[i].nodeType == 1){
+					target = source.parentNode.childNodes[i];
+					cfdump_toggleTarget( target,expand );
+					cfdump_toggleSource_qry(source);
+				}
+			}
+			if(target == null){
+				//target is the last cell
+				target = source.parentNode.lastChild;
+				cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+			}
+		}
+	}
+
+	cfdump_toggleSource_qry = function(source) {
+		if(expand == "closed"){
+			source.title = "click to expand";
+			source.style.fontStyle = "italic";
+		}
+		else{
+			source.title = "click to collapse";
+			source.style.fontStyle = "normal";
+		}
+	}
+
+</SCRIPT>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16437"></HEAD>
+<BODY>
+<TABLE class=cfdump_struct>
+  <TBODY>
+  <TR>
+    <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>AC</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>CO</TD>
+    <TD>us </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>EMP</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>END</TD>
+    <TD>17 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>ID</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JF</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JI</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JOBID</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JT</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>L</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>LET</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>P</TD>
+    <TD>1 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>QT</TD>
+    <TD>16 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>RADIUS</TD>
+    <TD>50 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>SALARY</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>SB</TD>
+    <TD>r </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>ST</TD>
+    <TD>1 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>TL</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>kw</TD>
+    <TD>developer </TD></TR></TBODY></TABLE>
+<STYLE>TABLE.cfdump_wddx {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_xml {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_struct {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_varundefined {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_array {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_query {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_cfc {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_object {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_binary {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udf {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udfbody {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_udfarguments {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif; FONT-SIZE: xx-small; cell-spacing: 2px
+}
+TABLE.cfdump_wddx TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_xml TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_struct TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_varundefined TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_array TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_query TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_cfc TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_object TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_binary TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udf TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udfbody TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_udfarguments TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: white; PADDING-TOP: 5px
+}
+TABLE.cfdump_wddx TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_xml TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_struct TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_varundefined TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_array TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_query TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_cfc TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_object TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_binary TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udf TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udfbody TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_udfarguments TD {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TABLE.cfdump_wddx {
+	BACKGROUND-COLOR: #000000
+}
+TABLE.cfdump_wddx TH.wddx {
+	BACKGROUND-COLOR: #444444
+}
+TABLE.cfdump_xml {
+	BACKGROUND-COLOR: #888888
+}
+TABLE.cfdump_xml TH.xml {
+	BACKGROUND-COLOR: #aaaaaa
+}
+TABLE.cfdump_xml TD.xml {
+	BACKGROUND-COLOR: #dddddd
+}
+TABLE.cfdump_struct {
+	BACKGROUND-COLOR: #0000cc
+}
+TABLE.cfdump_struct TH.struct {
+	BACKGROUND-COLOR: #4444cc
+}
+TABLE.cfdump_struct TD.struct {
+	BACKGROUND-COLOR: #ccddff
+}
+TABLE.cfdump_varundefined {
+	BACKGROUND-COLOR: #cc3300
+}
+TABLE.cfdump_varundefined TH.varundefined {
+	BACKGROUND-COLOR: #cc3300
+}
+TABLE.cfdump_varundefined TD.varundefined {
+	BACKGROUND-COLOR: #ccddff
+}
+TABLE.cfdump_array {
+	BACKGROUND-COLOR: #006600
+}
+TABLE.cfdump_array TH.array {
+	BACKGROUND-COLOR: #009900
+}
+TABLE.cfdump_array TD.array {
+	BACKGROUND-COLOR: #ccffcc
+}
+TABLE.cfdump_query {
+	BACKGROUND-COLOR: #884488
+}
+TABLE.cfdump_query TH.query {
+	BACKGROUND-COLOR: #aa66aa
+}
+TABLE.cfdump_query TD.query {
+	BACKGROUND-COLOR: #ffddff
+}
+TABLE.cfdump_cfc {
+	BACKGROUND-COLOR: #ff0000
+}
+TABLE.cfdump_cfc TH.cfc {
+	BACKGROUND-COLOR: #ff4444
+}
+TABLE.cfdump_cfc TD.cfc {
+	BACKGROUND-COLOR: #ffcccc
+}
+TABLE.cfdump_object {
+	BACKGROUND-COLOR: #ff0000
+}
+TABLE.cfdump_object TH.object {
+	BACKGROUND-COLOR: #ff4444
+}
+TABLE.cfdump_binary {
+	BACKGROUND-COLOR: #eebb00
+}
+TABLE.cfdump_binary TH.binary {
+	BACKGROUND-COLOR: #ffcc44
+}
+TABLE.cfdump_binary TD {
+	FONT-SIZE: x-small
+}
+TABLE.cfdump_udf {
+	BACKGROUND-COLOR: #aa4400
+}
+TABLE.cfdump_udf TH.udf {
+	BACKGROUND-COLOR: #cc6600
+}
+TABLE.cfdump_udfarguments {
+	BACKGROUND-COLOR: #dddddd; cell-spacing: 3
+}
+TABLE.cfdump_udfarguments TH {
+	BACKGROUND-COLOR: #eeeeee; COLOR: #000000
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+
+
+// for queries we have more than one td element to collapse/expand
+	var expand = "open";
+
+	dump = function( obj ) {
+		var out = "" ;
+		if ( typeof obj == "object" ) {
+			for ( key in obj ) {
+				if ( typeof obj[key] != "function" ) out += key + ': ' + obj[key] + '<br>' ;
+			}
+		}
+	}
+
+
+	cfdump_toggleRow = function(source) {
+		//target is the right cell
+		if(document.all) target = source.parentElement.cells[1];
+		else {
+			var element = null;
+			var vLen = source.parentNode.childNodes.length;
+			for(var i=vLen-1;i>0;i--){
+				if(source.parentNode.childNodes[i].nodeType == 1){
+					element = source.parentNode.childNodes[i];
+					break;
+				}
+			}
+			if(element == null)
+				target = source.parentNode.lastChild;
+			else
+				target = element;
+		}
+		//target = source.parentNode.lastChild ;
+		cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+	}
+
+	cfdump_toggleXmlDoc = function(source) {
+
+		var caption = source.innerHTML.split( ' [' ) ;
+
+		// toggle source (header)
+		if ( source.style.fontStyle == 'italic' ) {
+			// closed -> short
+			source.style.fontStyle = 'normal' ;
+			source.innerHTML = caption[0] + ' [short version]' ;
+			source.title = 'click to maximize' ;
+			switchLongToState = 'closed' ;
+			switchShortToState = 'open' ;
+		} else if ( source.innerHTML.indexOf('[short version]') != -1 ) {
+			// short -> full
+			source.innerHTML = caption[0] + ' [long version]' ;
+			source.title = 'click to collapse' ;
+			switchLongToState = 'open' ;
+			switchShortToState = 'closed' ;
+		} else {
+			// full -> closed
+			source.style.fontStyle = 'italic' ;
+			source.title = 'click to expand' ;
+			source.innerHTML = caption[0] ;
+			switchLongToState = 'closed' ;
+			switchShortToState = 'closed' ;
+		}
+
+		// Toggle the target (everething below the header row).
+		// First two rows are XMLComment and XMLRoot - they are part
+		// of the long dump, the rest are direct children - part of the
+		// short dump
+		if(document.all) {
+			var table = source.parentElement.parentElement ;
+			for ( var i = 1; i < table.rows.length; i++ ) {
+				target = table.rows[i] ;
+				if ( i < 3 ) cfdump_toggleTarget( target, switchLongToState ) ;
+				else cfdump_toggleTarget( target, switchShortToState ) ;
+			}
+		}
+		else {
+			var table = source.parentNode.parentNode ;
+			var row = 1;
+			for ( var i = 1; i < table.childNodes.length; i++ ) {
+				target = table.childNodes[i] ;
+				if( target.style ) {
+					if ( row < 3 ) {
+						cfdump_toggleTarget( target, switchLongToState ) ;
+					} else {
+						cfdump_toggleTarget( target, switchShortToState ) ;
+					}
+					row++;
+				}
+			}
+		}
+	}
+
+	cfdump_toggleTable = function(source) {
+
+		var switchToState = cfdump_toggleSource( source ) ;
+		if(document.all) {
+			var table = source.parentElement.parentElement ;
+			for ( var i = 1; i < table.rows.length; i++ ) {
+				target = table.rows[i] ;
+				cfdump_toggleTarget( target, switchToState ) ;
+			}
+		}
+		else {
+			var table = source.parentNode.parentNode ;
+			for ( var i = 1; i < table.childNodes.length; i++ ) {
+				target = table.childNodes[i] ;
+				if(target.style) {
+					cfdump_toggleTarget( target, switchToState ) ;
+				}
+			}
+		}
+	}
+
+	cfdump_toggleSource = function( source ) {
+		if ( source.style.fontStyle == 'italic' || source.style.fontStyle == null) {
+			source.style.fontStyle = 'normal' ;
+			source.title = 'click to collapse' ;
+			return 'open' ;
+		} else {
+			source.style.fontStyle = 'italic' ;
+			source.title = 'click to expand' ;
+			return 'closed' ;
+		}
+	}
+
+	cfdump_toggleTarget = function( target, switchToState ) {
+		if ( switchToState == 'open' )	target.style.display = '' ;
+		else target.style.display = 'none' ;
+	}
+
+	// collapse all td elements for queries
+	cfdump_toggleRow_qry = function(source) {
+		expand = (source.title == "click to collapse") ? "closed" : "open";
+		if(document.all) {
+			var nbrChildren = source.parentElement.cells.length;
+			if(nbrChildren > 1){
+				for(i=nbrChildren-1;i>0;i--){
+					target = source.parentElement.cells[i];
+					cfdump_toggleTarget( target,expand ) ;
+					cfdump_toggleSource_qry(source);
+				}
+			}
+			else {
+				//target is the right cell
+				target = source.parentElement.cells[1];
+				cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+			}
+		}
+		else{
+			var target = null;
+			var vLen = source.parentNode.childNodes.length;
+			for(var i=vLen-1;i>1;i--){
+				if(source.parentNode.childNodes[i].nodeType == 1){
+					target = source.parentNode.childNodes[i];
+					cfdump_toggleTarget( target,expand );
+					cfdump_toggleSource_qry(source);
+				}
+			}
+			if(target == null){
+				//target is the last cell
+				target = source.parentNode.lastChild;
+				cfdump_toggleTarget( target, cfdump_toggleSource( source ) ) ;
+			}
+		}
+	}
+
+	cfdump_toggleSource_qry = function(source) {
+		if(expand == "closed"){
+			source.title = "click to expand";
+			source.style.fontStyle = "italic";
+		}
+		else{
+			source.title = "click to collapse";
+			source.style.fontStyle = "normal";
+		}
+	}
+
+</SCRIPT>
+
+<TABLE class=cfdump_struct>
+  <TBODY>
+  <TR>
+    <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>CANONICAL</TD>
+    <TD>http://thejobfool/jobs/index.cfm/ </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>CFQUERY.EXECUTIONTIME</TD>
+    <TD>0 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>CHECK</TD>
+    <TD>
+      <TABLE class=cfdump_query>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=query title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>query</TH></TR>
+        <TR bgColor=#eeaaaa>
+          <TD style="CURSOR: pointer" class=query title="click to collapse" 
+          onclick=cfdump_toggleRow_qry(this);>&nbsp;</TD>
+          <TD class=query>COUNT</TD></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=query title="click to collapse" 
+          onclick=cfdump_toggleRow_qry(this);>1</TD>
+          <TD vAlign=top>1 </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>COTITLE</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>DEBUG</TD>
+    <TD>
+      <TABLE class=cfdump_udf width="100%">
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=udf title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>function debug</B></TH></TR>
+        <TR>
+          <TD>
+            <TABLE class=cfdump_udfbody>
+              <TBODY>
+              <TR>
+                <TD><I>Arguments:</I></TD>
+                <TD>none</TD></TR>
+              <TR>
+                <TD width="30%"><I>ReturnType:</I></TD>
+                <TD>Any<BR></TD></TR>
+              <TR>
+                <TD><I>Roles:</I></TD>
+                <TD>&nbsp;<BR></TD></TR>
+              <TR>
+                <TD><I>Access:</I></TD>
+                <TD>public<BR></TD></TR>
+              <TR>
+                <TD><I>Output:</I></TD>
+                <TD>true</TD></TR>
+              <TR>
+                <TD><I>DisplayName:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Hint:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Description:</I></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>DESC</TD>
+    <TD>
+      <TABLE class=cfdump_struct>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>DESCRIPTION</TD>
+          <TD>Speed up your job search and find better jobs! The Job Fool 
+            searches millions of jobs from thousands of sites. New Jobs are 
+            posted hourly. Find hot new jobs, advance your career, develop new 
+            and better employer relations, and learn about career planning. Job 
+            search made easy. </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>EXPIRATION_DATE</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>GETCONTENT</TD>
+    <TD>
+      <TABLE class=cfdump_udf width="100%">
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=udf title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>function 
+          getContent</B></TH></TR>
+        <TR>
+          <TD>
+            <TABLE class=cfdump_udfbody>
+              <TBODY>
+              <TR>
+                <TD colSpan=2><I>Arguments:</I> <BR>
+                  <TABLE class=cfdump_udfarguments>
+                    <TBODY>
+                    <TR>
+                      <TH><B>Name</B></TH>
+                      <TH><B>Required</B></TH>
+                      <TH><B>Type</B></TH>
+                      <TH><B>Default</B></TH></TR>
+                    <TR>
+                      <TD>contentID</TD>
+                      <TD>Required</TD>
+                      <TD>string</TD>
+                      <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+              <TR>
+                <TD width="30%"><I>ReturnType:</I></TD>
+                <TD>string<BR></TD></TR>
+              <TR>
+                <TD><I>Roles:</I></TD>
+                <TD>&nbsp;<BR></TD></TR>
+              <TR>
+                <TD><I>Access:</I></TD>
+                <TD>public<BR></TD></TR>
+              <TR>
+                <TD><I>Output:</I></TD>
+                <TD>false</TD></TR>
+              <TR>
+                <TD><I>DisplayName:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Hint:</I></TD>
+                <TD>returns the content from variables.stContent using the 
+                  contentID key</TD></TR>
+              <TR>
+                <TD><I>Description:</I></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JOBDATA</TD>
+    <TD>
+      <TABLE class=cfdump_struct>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>RECORDCOUNT</TD>
+          <TD>0 </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>JOB_TYPE</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>KEYWORD</TD>
+    <TD>developer </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>LOCATION</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>LTITLE</TD>
+    <TD>[empty string] </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>NORETURN</TD>
+    <TD>0 </TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>QRYDATA</TD>
+    <TD>
+      <TABLE class=cfdump_struct>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>RECORDCOUNT</TD>
+          <TD>0 </TD></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>TITLE</TD>
+          <TD>[empty string] </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>QRYEMP</TD>
+    <TD>
+      <TABLE class=cfdump_struct>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>RECORDCOUNT</TD>
+          <TD>0 </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>RENDER</TD>
+    <TD>
+      <TABLE class=cfdump_udf width="100%">
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=udf title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>function 
+render</B></TH></TR>
+        <TR>
+          <TD>
+            <TABLE class=cfdump_udfbody>
+              <TBODY>
+              <TR>
+                <TD><I>Arguments:</I></TD>
+                <TD>none</TD></TR>
+              <TR>
+                <TD width="30%"><I>ReturnType:</I></TD>
+                <TD>void<BR></TD></TR>
+              <TR>
+                <TD><I>Roles:</I></TD>
+                <TD>&nbsp;<BR></TD></TR>
+              <TR>
+                <TD><I>Access:</I></TD>
+                <TD>public<BR></TD></TR>
+              <TR>
+                <TD><I>Output:</I></TD>
+                <TD>true</TD></TR>
+              <TR>
+                <TD><I>DisplayName:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Hint:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Description:</I></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>SENTENCECASE</TD>
+    <TD>
+      <TABLE class=cfdump_udf width="100%">
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=udf title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>function 
+          sentenceCase</B></TH></TR>
+        <TR>
+          <TD>
+            <TABLE class=cfdump_udfbody>
+              <TBODY>
+              <TR>
+                <TD colSpan=2><I>Arguments:</I> <BR>
+                  <TABLE class=cfdump_udfarguments>
+                    <TBODY>
+                    <TR>
+                      <TH><B>Name</B></TH>
+                      <TH><B>Required</B></TH>
+                      <TH><B>Type</B></TH>
+                      <TH><B>Default</B></TH></TR>
+                    <TR>
+                      <TD>initText</TD>
+                      <TD>Optional</TD>
+                      <TD>Any</TD>
+                      <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+              <TR>
+                <TD width="30%"><I>ReturnType:</I></TD>
+                <TD>Any<BR></TD></TR>
+              <TR>
+                <TD><I>Roles:</I></TD>
+                <TD>&nbsp;<BR></TD></TR>
+              <TR>
+                <TD><I>Access:</I></TD>
+                <TD>public<BR></TD></TR>
+              <TR>
+                <TD><I>Output:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>DisplayName:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Hint:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Description:</I></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>SETCONTENT</TD>
+    <TD>
+      <TABLE class=cfdump_udf width="100%">
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=udf title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>function 
+          setContent</B></TH></TR>
+        <TR>
+          <TD>
+            <TABLE class=cfdump_udfbody>
+              <TBODY>
+              <TR>
+                <TD colSpan=2><I>Arguments:</I> <BR>
+                  <TABLE class=cfdump_udfarguments>
+                    <TBODY>
+                    <TR>
+                      <TH><B>Name</B></TH>
+                      <TH><B>Required</B></TH>
+                      <TH><B>Type</B></TH>
+                      <TH><B>Default</B></TH></TR>
+                    <TR>
+                      <TD>contentID</TD>
+                      <TD>Required</TD>
+                      <TD>string</TD>
+                      <TD>&nbsp;</TD></TR>
+                    <TR>
+                      <TD>content</TD>
+                      <TD>Required</TD>
+                      <TD>any</TD>
+                      <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+              <TR>
+                <TD width="30%"><I>ReturnType:</I></TD>
+                <TD>void<BR></TD></TR>
+              <TR>
+                <TD><I>Roles:</I></TD>
+                <TD>&nbsp;<BR></TD></TR>
+              <TR>
+                <TD><I>Access:</I></TD>
+                <TD>public<BR></TD></TR>
+              <TR>
+                <TD><I>Output:</I></TD>
+                <TD>true</TD></TR>
+              <TR>
+                <TD><I>DisplayName:</I></TD>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD><I>Hint:</I></TD>
+                <TD>saves arguments.content to variables.stContent with an 
+                  arguments.contentID key</TD></TR>
+              <TR>
+                <TD><I>Description:</I></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>STCONTENT</TD>
+    <TD>
+      <TABLE class=cfdump_struct>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2>struct</TH></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>Footer</TD>
+          <TD>&lt;p&gt;&lt;a href="http://uk.thejobfool.com" title="Jobs in 
+            the United Kingdom"&gt;&lt;img 
+            src="/themes/default/images/icons/uk.png" width="16" height="11" 
+            alt="Job in the United Kingdom" hspace="4"/&gt;United Kingdom 
+            Jobs&lt;/a&gt;&lt;/p&gt; &lt;div class="JFcontainer"&gt; &lt;a 
+            href="/employers/"&gt;Job Search By Employer&lt;/a&gt; | &lt;a 
+            href="/browse-jobs/"&gt;Job Search By Location&lt;/a&gt; | &lt;a 
+            href="/browse-jobs/"&gt;Job Search By Job Catergory&lt;/a&gt; 
+            &lt;/div&gt; &lt;div class="JFcontainer"&gt; &lt;a 
+            href="/privacy.cfm"&gt;Privacy&lt;/a&gt; | &lt;a 
+            href="/about/"&gt;About&lt;/a&gt; © 2011 TheJobFool.com All Rights 
+            Reserved &lt;/div&gt; </TD></TR>
+        <TR>
+          <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+          onclick=cfdump_toggleRow(this);>MainContent</TD>
+          <TD>&lt;h1&gt;Be Happy!&lt;/h1&gt; </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>THIS</TD>
+    <TD>
+      <TABLE class=cfdump_cfc>
+        <TBODY>
+        <TR>
+          <TH style="CURSOR: pointer" class=cfc title="click to collapse" 
+          onclick=cfdump_toggleTable(this); colSpan=2><A name=cfc1><SPAN 
+            style="DISPLAY: none" id=_cfc1>[cfc1]</SPAN> component</A> <A 
+            style="COLOR: white" 
+            href="http://thejobfool/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&amp;name=themes.default.defaultmaster">themes.default.defaultmaster</A> 
+            <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extends <A 
+            style="COLOR: white" 
+            href="http://thejobfool/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&amp;name=system.ui.MasterPageBase">system.ui.MasterPageBase</A> 
+          </TH></TR>
+        <TR>
+          <TD 
+          style="BACKGROUND-COLOR: #ff99aa; FONT-STYLE: italic; CURSOR: pointer" 
+          class=cfc title="click to expand" 
+            onclick=cfdump_toggleRow(this);>METHODS</TD>
+          <TD style="DISPLAY: none" vAlign=top>
+            <TABLE class=cfdump_cfc>
+              <TBODY>
+              <TR vAlign=top>
+                <TD 
+                style="BACKGROUND-COLOR: #ff99aa; FONT-STYLE: normal; CURSOR: pointer" 
+                class=cfc title="click to collapse" 
+                onclick=cfdump_toggleRow(this);>DEBUG</TD>
+                <TD>
+                  <TABLE class=cfdump_udf width="100%">
+                    <TBODY>
+                    <TR>
+                      <TH style="CURSOR: pointer" class=udf 
+                      title="click to collapse" 
+                      onclick=cfdump_toggleTable(this); colSpan=2>function 
+                        debug</B></TH></TR>
+                    <TR>
+                      <TD>
+                        <TABLE class=cfdump_udfbody>
+                          <TBODY>
+                          <TR>
+                            <TD><I>Arguments:</I></TD>
+                            <TD>none</TD></TR>
+                          <TR>
+                            <TD width="30%"><I>ReturnType:</I></TD>
+                            <TD>Any<BR></TD></TR>
+                          <TR>
+                            <TD><I>Roles:</I></TD>
+                            <TD>&nbsp;<BR></TD></TR>
+                          <TR>
+                            <TD><I>Access:</I></TD>
+                            <TD>public<BR></TD></TR>
+                          <TR>
+                            <TD><I>Output:</I></TD>
+                            <TD>true</TD></TR>
+                          <TR>
+                            <TD><I>DisplayName:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Hint:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Description:</I></TD>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR vAlign=top>
+                <TD 
+                style="BACKGROUND-COLOR: #ff99aa; FONT-STYLE: normal; CURSOR: pointer" 
+                class=cfc title="click to collapse" 
+                onclick=cfdump_toggleRow(this);>SETCONTENT</TD>
+                <TD>
+                  <TABLE class=cfdump_udf width="100%">
+                    <TBODY>
+                    <TR>
+                      <TH style="CURSOR: pointer" class=udf 
+                      title="click to collapse" 
+                      onclick=cfdump_toggleTable(this); colSpan=2>function 
+                        setContent</B></TH></TR>
+                    <TR>
+                      <TD>
+                        <TABLE class=cfdump_udfbody>
+                          <TBODY>
+                          <TR>
+                            <TD colSpan=2><I>Arguments:</I> <BR>
+                              <TABLE class=cfdump_udfarguments>
+                                <TBODY>
+                                <TR>
+                                <TH><B>Name</B></TH>
+                                <TH><B>Required</B></TH>
+                                <TH><B>Type</B></TH>
+                                <TH><B>Default</B></TH></TR>
+                                <TR>
+                                <TD>contentID</TD>
+                                <TD>Required</TD>
+                                <TD>string</TD>
+                                <TD>&nbsp;</TD></TR>
+                                <TR>
+                                <TD>content</TD>
+                                <TD>Required</TD>
+                                <TD>any</TD>
+                                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+                          <TR>
+                            <TD width="30%"><I>ReturnType:</I></TD>
+                            <TD>void<BR></TD></TR>
+                          <TR>
+                            <TD><I>Roles:</I></TD>
+                            <TD>&nbsp;<BR></TD></TR>
+                          <TR>
+                            <TD><I>Access:</I></TD>
+                            <TD>public<BR></TD></TR>
+                          <TR>
+                            <TD><I>Output:</I></TD>
+                            <TD>true</TD></TR>
+                          <TR>
+                            <TD><I>DisplayName:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Hint:</I></TD>
+                            <TD>saves arguments.content to variables.stContent 
+                              with an arguments.contentID key</TD></TR>
+                          <TR>
+                            <TD><I>Description:</I></TD>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR vAlign=top>
+                <TD 
+                style="BACKGROUND-COLOR: #ff99aa; FONT-STYLE: normal; CURSOR: pointer" 
+                class=cfc title="click to collapse" 
+                onclick=cfdump_toggleRow(this);>GETCONTENT</TD>
+                <TD>
+                  <TABLE class=cfdump_udf width="100%">
+                    <TBODY>
+                    <TR>
+                      <TH style="CURSOR: pointer" class=udf 
+                      title="click to collapse" 
+                      onclick=cfdump_toggleTable(this); colSpan=2>function 
+                        getContent</B></TH></TR>
+                    <TR>
+                      <TD>
+                        <TABLE class=cfdump_udfbody>
+                          <TBODY>
+                          <TR>
+                            <TD colSpan=2><I>Arguments:</I> <BR>
+                              <TABLE class=cfdump_udfarguments>
+                                <TBODY>
+                                <TR>
+                                <TH><B>Name</B></TH>
+                                <TH><B>Required</B></TH>
+                                <TH><B>Type</B></TH>
+                                <TH><B>Default</B></TH></TR>
+                                <TR>
+                                <TD>contentID</TD>
+                                <TD>Required</TD>
+                                <TD>string</TD>
+                                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+                          <TR>
+                            <TD width="30%"><I>ReturnType:</I></TD>
+                            <TD>string<BR></TD></TR>
+                          <TR>
+                            <TD><I>Roles:</I></TD>
+                            <TD>&nbsp;<BR></TD></TR>
+                          <TR>
+                            <TD><I>Access:</I></TD>
+                            <TD>public<BR></TD></TR>
+                          <TR>
+                            <TD><I>Output:</I></TD>
+                            <TD>false</TD></TR>
+                          <TR>
+                            <TD><I>DisplayName:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Hint:</I></TD>
+                            <TD>returns the content from variables.stContent 
+                              using the contentID key</TD></TR>
+                          <TR>
+                            <TD><I>Description:</I></TD>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR vAlign=top>
+                <TD 
+                style="BACKGROUND-COLOR: #ff99aa; FONT-STYLE: normal; CURSOR: pointer" 
+                class=cfc title="click to collapse" 
+                onclick=cfdump_toggleRow(this);>RENDER</TD>
+                <TD>
+                  <TABLE class=cfdump_udf width="100%">
+                    <TBODY>
+                    <TR>
+                      <TH style="CURSOR: pointer" class=udf 
+                      title="click to collapse" 
+                      onclick=cfdump_toggleTable(this); colSpan=2>function 
+                        render</B></TH></TR>
+                    <TR>
+                      <TD>
+                        <TABLE class=cfdump_udfbody>
+                          <TBODY>
+                          <TR>
+                            <TD><I>Arguments:</I></TD>
+                            <TD>none</TD></TR>
+                          <TR>
+                            <TD width="30%"><I>ReturnType:</I></TD>
+                            <TD>void<BR></TD></TR>
+                          <TR>
+                            <TD><I>Roles:</I></TD>
+                            <TD>&nbsp;<BR></TD></TR>
+                          <TR>
+                            <TD><I>Access:</I></TD>
+                            <TD>public<BR></TD></TR>
+                          <TR>
+                            <TD><I>Output:</I></TD>
+                            <TD>true</TD></TR>
+                          <TR>
+                            <TD><I>DisplayName:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Hint:</I></TD>
+                            <TD>&nbsp;</TD></TR>
+                          <TR>
+                            <TD><I>Description:</I></TD>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="CURSOR: pointer" class=struct title="click to collapse" 
+    onclick=cfdump_toggleRow(this);>THISTITLE</TD>
+    <TD>Job Search | The Job Fool </TD></TR></TBODY></TABLE></BODY></HTML>
