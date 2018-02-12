@@ -64,6 +64,22 @@
                 .job-search-result a:hover{
                     text-decoration: none;
                 }
+                .btn-mod {
+                    width: 124px;
+                    border-radius: 2px;
+                    background-color: #eee;
+                    border: 1px solid #ddd;
+                    color: #333;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 3px;
+                    padding: 6px 10px;
+                    text-align: center;
+                    vertical-align: middle;
+            }
             </STYLE>
             <noscript>
                 <style>
@@ -156,10 +172,52 @@
             <div class="container x-content" style="min-height:800px;"> 
                 <div class="row x-content row-offcanvas row-offcanvas-right" data-pg-name="Row:Content"> 
                     <div class="col-xs-12 col-sm-9 col-md-6" data-pg-name="Col-Main Content">
-                        <div class="ads col-sm-2 x-noPL hidden-xs" id="adcontainer2-16">
+                        <div class="ads col-sm-2 x-noPL" id="@adcontainer2-16">
                         <!-- above search results ads -->
                         </div>  
                         <div id="job-well" class="x-job-well">
+                            <div class="jobposting-filters">
+                                    <p class="filter-head"></p>
+                                    <div class="btn-group first-button">
+                                        <p class="filter-label">Sort by</p>
+                                        <div class="dropdown">
+                                                <button id="sort-btn" class="btn btn-mod dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+                                                <span class="caret"></span></button>
+                                                <ul id="sortfilter" class="dropdown-menu">
+                                                    <li><a href="#">Relevance</a></li>
+                                                    <li><a href="#">Date</a></li>
+                                                </ul>
+                                             </div>
+                                    </div>
+                                    <div class="btn-group ">
+                                        <p class="filter-label">Date Added</p>
+                                        <div class="dropdown">
+                                                <button id="date-btn" class="btn-mod dropdown-toggle" type="button" data-toggle="dropdown">Date Added
+                                                <span class="caret"></span></button>
+                                                <ul id="datefilter" class="dropdown-menu">
+                                                    <li><a href="#" data-val="1">1 day</a></li>
+                                                    <li><a href="#" data-val="7">7 days</a></li>
+                                                    <li><a href="#" data-val="14">14 days</a></li>
+                                                    <li><a href="#" data-val="30">30 days</a></li>
+                                                    <li><a href="#" data-val="45">45 days</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    <div class="btn-group ">
+                                        <p class="filter-label">Distance</p>
+                                        <div class="dropdown">
+                                            <button id="distance-btn" class="btn btn-mod dropdown-toggle" type="button" data-toggle="dropdown">Distance
+                                            <span class="caret"></span></button>
+                                            <ul id="distfilter" class="dropdown-menu">
+                                                <li><a href="#" data-val="5">5 Miles</a></li>
+                                                <li><a href="#" data-val="10">10 Miles</a></li>
+                                                <li><a href="#" data-val="25">25 Miles</a></li>
+                                                <li><a href="#" data-val="50">50 Miles</a></li>
+                                                <li><a href="#" data-val="100">100 Miles</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             <div id="job-results">
                                 <div id="job-results-set"></div>
                                 <div id="job-results-pagination"></div>
@@ -170,37 +228,28 @@
                         </div>
                         
                         <div class=".x-pagination col-xs-12 x-noPL x-BMR20">
-                            <!-- <cfmodule template="../system/customtags/pagination.cfm" recordcount="#results.totalResults#" perpage="10" p="#url.p#"> -->
                         </div>
                     </div>
                     <div class="ads col-xs-3 hidden-sm hidden-xs x-noPL x-noPR" id="adcontainer1-16">
                     <!-- right side Ad column --> 
-                    </div>          
-                    <div id="x_filters" class="col-xs-3 col-sm-3 sidebar-offcanvas" data-pg-name="Col-Filters"> 
-                        <cfoutput>
+                    </div>   
+                    <div id="x_filters" class="col-xs-3 col-sm-3 sidebar-offcanvas" data-pg-name="Col-Filters">
+                            <div id="message" class='col-xs-12 alertmessage' style="display:none;"><h3>Sweet! You're Almost Done.</h3><p>To activate your job alert, please check your email and click the confirmation button .</p>
+                            </div> 
                         <div id="emailform" class="x-emailform row" role="form"> 
                             <div class="col-xs-12">
-                                <label for="email" class="x-noM">Send me these jobs</label>
-                                <cfif len(url.kw) gt 2><cfoutput>    
-                                <p class="normal"> #url.kw# jobs <cfif len(url.l) gt 5>#url.l#</cfif></p>
-                                </cfoutput></cfif>
+                                <label for="email" class="x-noM">Send me these jobs</label>  
+                                <p class="normal"> <span class="keywords"></span> jobs <span class="location"></span></p>
                             </div>                             
                             <div class="col-xs-12">
                                 <form id="alert" data-toggle="validator" role="form">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="enter email address" required>
-                                <cfoutput>
-                                <input type="hidden" class="form-control" name="what" value="#url.kw#">
-                                <input type="hidden" class="form-control" name="where" value="#url.l#">
-                                </cfoutput>
                                 <noscript><span class="error">Please enable javascript.</span></noscript>
                                 <button class="btn btn-primary x-btn-addemail form-control">Send</button>
                                 <input type="hidden" class="form-control" name="cfid" value="jobspage">
                                 </form> 
                             </div>                             
                         </div>
-                        <div id="cityfilter"></div>
-                        <div id="companyfilter"></div>
-                       </cfoutput>
                     </div>
                  
                 </div>                 
@@ -222,14 +271,18 @@
         </article>
     </script>
 
-<script src="../assets/js/jqall.js"></script>
-<script src="../assets/js/plugins.js"></script>
-<script src="../assets/js/app.js"></script>
-<script src="../assets/js/js/vendor/jquery.tmpl.min.js"></script>
-<script src="../assets/js/model.js"></script> 
+<script src="/assets/js/vendor/jquery3.3.1.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/bootstrap3.3.7.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/vendor/jquery.tmpl.min.js"></script>
+<script src="/assets/js/model.js"></script> 
 <script>
 $(document).ready(function($){
     App.init();
+    $("#sortfilter li a")[0].click();
+    $("#datefilter li a")[4].click();
+    $("#distfilter li a")[2].click();
 
     // replace spaces with +
     $("#x_filters a").each(function() {
@@ -258,10 +311,11 @@ ignore: ":hidden",
 rules: {   },
 
 submitHandler: function (form) {
-    setTimeout(function(){  
-    $('#emailform').html(
-            "<div class='col-xs-12 alertmessage'><h3>Sweet! You're Almost Done.</h3><p>To activate your job alert, please check your email and click the confirmation button .</p></div>");
-        }, 500);
+$('#emailform').hide();
+$('#message').show()
+setTimeout(
+    function(){    $('#message').hide();    $('#emailform').show();}, 
+5000);
 
     //  $.ajax({
     //     type: "POST",
@@ -281,13 +335,6 @@ submitHandler: function (form) {
 });                
 </script>    
                         
-    <!--[if lt IE 9]>
-	<script src="../assets/plugins/respond.js"></script>
-	<script src="../assets/plugins/html5shiv.js"></script>
-	<script src="../assets/plugins/placeholder-IE-fixes.js"></script>
-	<![endif]-->         
-              
-    <cfif len(url.kw) LT 3><cfset adquery="work from home"><cfelse><cfset adquery = "#url.kw#"></cfif>
 <script>
     $("#tagmanager").load("../partials/googletagmanager.cfm");
     $("header").load("../partials/header.html");
